@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>My Personal Portfolio</h1>
+        <p id="welcomeMessage">Welcome to my website!</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Cameron, and I am an aspiring software developer.
+                I enjoy learning new technologies and creating applications.
+                I am passionate about C++, C#, and JavaScript.
+                My goal is to develop innovative and user-friendly applications.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p>Three projects I have worked on:</p>
+
+            <div class="projects">
+
+                <div class="project">
+                    <a href="https://github.com/camdea123/JotPlan-Repo---SDC340" target="_blank">
+                        <img src="https://placehold.co/400x250/007b8a/ffffff?text=Project+1"
+                             alt="Project 1">
+                    </a>
+                    <h3>Project One</h3>
+                    <p>A simple mobile application for task management.</p>
+                </div>
+
+                <div class="project">
+                    <a href="https://github.com/camdea123/Weigh_Out_There" target="_blank">
+                        <img src="https://placehold.co/400x250/444444/ffffff?text=Project+2"
+                             alt="Project 2">
+                    </a>
+                    <h3>Project Two</h3>
+                    <p>An app that calculates weight on different planets.</p>
+                </div>
+
+                <div class="project">
+                    <a href="https://github.com/" target="_blank">
+                        <img src="https://placehold.co/400x250/00bcd4/ffffff?text=Project+3"
+                             alt="Project 3">
+                    </a>
+                    <h3>Project Three</h3>
+                    <p>COMING SOON</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out using the form below.</p>
+
+            <form action="#" method="POST">
+
+                <input
+                    type="text"
+                    name="senderName"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email Address"
+                    required>
+
+                <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    required>
+
+                <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message here..."
+                    required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+    <!-- User Interaction -->
+    <script>
+        // Ask the visitor for their name
+        let userName = prompt("What is your name?");
+
+        // Update the welcome message
+        if (userName && userName.trim() !== "") {
+            document.getElementById("welcomeMessage").textContent =
+                "Welcome, " + userName.trim() + "! Thanks for visiting my portfolio.";
+        } else {
+            document.getElementById("welcomeMessage").textContent =
+                "Welcome to my personal portfolio!";
+        }
+    </script>
+</body>
+</html>
