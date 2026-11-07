@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDC355 Project</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Welcome Modal-->
+     <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome to My Portfolio!</h2>
+            <p>This page is a work in progress.</p>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <header>
+        <h1>My Personal Portfolio</h1>
+        <p id="welcomeMessage">Welcome to my website!</p>
+    </header>
+
+       <label class="dark-toggle">
+            <input type="checkbox" id="darkModeToggle">
+            Dark Mode
+        </label>
+        
+        <nav>
+            <a href="#about">About</a>
+            <a href="#featured">Featured Content</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Cameron, and I am an aspiring software developer.
+                I enjoy learning new technologies and creating applications.
+                I am passionate about C++, C#, and JavaScript.
+                My goal is to develop innovative and user-friendly applications.
+            </p>
+
+            <h3>My Skills and Technologies</h3>
+
+            <ul id="skillsList">
+                <!-- JavaScript will add skills here -->
+            </ul>
+
+        </section>
+<section id="featured">
+
+            <h2>Featured Content</h2>
+
+            <p>
+                Explore some of my educational resources
+                and personal projects.
+            </p>
+
+            <!-- UNIVERSITY RESOURCES DIV -->
+
+            <div id="universityResources"
+                 class="featured-card">
+
+                <h3>University Resources</h3>
+
+                <p>
+                    Here are some useful resources for my education
+                    and web development studies.
+                </p>
+
+                <a href="https://www.ecpi.edu/"
+                   target="_blank">
+                    ECPI University Home Page
+                </a>
+
+            </div>
+
+
+            <!-- PERSONAL PROJECTS DIV -->
+
+            <div id="personalResources"
+                 class="featured-card">
+
+                <h3>Personal Pages</h3>
+
+                <p>
+                    Explore my personal coding projects
+                    and web development work.
+                </p>
+
+                <a href="https://github.com/camdea123"
+                   target="_blank">
+
+                    <img
+                        src="https://placehold.co/300x200/007b8a/ffffff?text=GitHub+Project+1"
+                        alt="My Github page">
+
+                </a>
+
+                <a href="https://github.com/"
+                   target="_blank">
+
+                    <img
+                        src="https://placehold.co/300x200/444444/ffffff?text=GitHub+Project+2"
+                        alt="GitHub Project 2">
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p>Three projects I have worked on:</p>
+            <!-- Project cards will be added here by JavaScript -->
+            <div class="projects">
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out using the form below.</p>
+            
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="senderName"
+                    name="senderName"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email Address"
+                    required>   
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject"
+                    required>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message here..."
+                    required></textarea>
+
+                <button type="submit" id="submitButton" data-tooltip="Click to send your message">
+                    Send Message
+                </button>
+
+            </form>
+            <p id="formMessage"></p>
+ 
+        </section>
+
+    </main>
+    <!-- User Interaction -->
+    <script src="index.js"></script>
+</body>
+</html>
